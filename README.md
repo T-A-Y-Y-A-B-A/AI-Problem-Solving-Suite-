@@ -1,149 +1,126 @@
-📘 AI & Data Science Project Collection
+🚀 AI & Intelligent Systems Project Suite
 
-This repository contains multiple tasks demonstrating concepts from Artificial Intelligence, Logic, Search Algorithms, and Machine Learning. Each task focuses on solving real-world problems using computational techniques and visualization.
+A comprehensive collection of projects demonstrating practical applications of Artificial Intelligence, Search Algorithms, Logical Reasoning, and Machine Learning.
 
-📂 Project Structure
-├── Task 1: Maze Escape using A* Algorithm
-├── Task 2: Smart Traffic Signal System
-├── Task 3: Sudoku Solver (Propositional vs First-Order Logic)
-├── Task 4: House Price Prediction (ML Models)
-🧩 Task 1: Maze Escape – A* Search Algorithm
-📌 Description
+This repository showcases how different AI techniques can be applied to solve real-world problems such as pathfinding, traffic optimization, constraint solving, and predictive modeling.
 
-A 15×15 maze is generated with:
+📌 Overview
 
-Walls
-Traps (high-cost paths)
-Locks
-Start & Exit points
+This project is divided into four major tasks:
 
-The goal is to find the optimal path using the A* Search Algorithm.
+Task	Domain	Key Technique
+🧩 Task 1	Pathfinding	A* Search Algorithm
+🚦 Task 2	Smart Systems	Adaptive Traffic Control
+🔢 Task 3	Logic AI	SAT & First-Order Logic
+📈 Task 4	Machine Learning	Regression Models
+🧩 Task 1: Maze Escape using A* Search
+📝 Description
 
-⚙️ Features
-Random maze generation (DFS-based)
-Cost-based pathfinding
-Manhattan distance heuristic
-Performance evaluation (cost, steps, time)
-Visualization of maze and path
-🧠 Algorithm Used
-A* Search
+A randomly generated 15×15 maze simulates a high-security environment with obstacles like walls, traps, and locked areas. The objective is to guide an agent from start to exit using an optimal path.
 
-𝑓
-(
-𝑛
-)
-=
-𝑔
-(
-𝑛
-)
-+
-ℎ
-(
-𝑛
-)
-f(n)=g(n)+h(n)
+⚙️ Key Features
+Dynamic maze generation (DFS-based)
+Intelligent pathfinding using A*
+Trap-aware cost system
+Heuristic: Manhattan Distance
+Visual representation of maze and solution path
+🧠 Core Idea
+
+The A* algorithm ensures optimality using:
+
+f(n) = g(n) + h(n)
 📊 Output
-Path found or not
-Total cost
-Steps taken
-Execution time
-Visual maze with highlighted path
+Path found with minimum cost
+Total steps & execution time
+Visualized maze with highlighted path
 🚦 Task 2: Smart Traffic Signal System
-📌 Description
+📝 Description
 
-Simulation of a city-wide intelligent traffic control system on a 4×5 grid of intersections.
+A simulation of an intelligent traffic control system over a grid of intersections that adapts dynamically to real-time conditions.
 
-⚙️ Features
-Adaptive traffic signals based on:
-Traffic congestion
-Vehicle density
-Weather (rain)
-Priority handling:
-Emergency vehicles 🚑
-Buses 🚌
-Pedestrian crossing system
-Vehicle movement simulation
-Real-time traffic data updates
-🧠 Advanced Concepts
-Constraint Satisfaction
-Soft constraints:
-Fairness across districts
-Green wave optimization
-Congestion balancing
-Fuel consumption tracking
-Vehicle chain detection
-📊 Output
-Dynamic traffic simulation
-Signal state changes (RED/YELLOW/GREEN)
+⚙️ Key Features
+Adaptive signal timing based on:
+Traffic density
 Congestion levels
-Adaptive timing adjustments
-🔢 Task 3: Sudoku Solver
-📌 Description
-
-Solve a 9×9 Sudoku puzzle using:
-
-Propositional Logic (CNF + SAT Solver)
-First-Order Logic (Z3 Solver)
-⚙️ Features
-Grid visualization
-Step-by-step solving display
-Comparison of two logic approaches
-🧠 Techniques Used
-1. Propositional Logic
-CNF encoding
-Solved using pycosat
-2. First-Order Logic
-Constraint modeling using Z3
-Uses:
-Domain constraints (1–9)
-Row/Column uniqueness
-Subgrid constraints
+Weather conditions (rain)
+Priority handling:
+Emergency vehicles
+Public transport (buses)
+Pedestrian crossing system
+Real-time vehicle simulation
+🧠 Advanced Concepts
+Constraint Satisfaction (Hard + Soft Constraints)
+Green wave optimization (vehicle flow continuity)
+District-based fairness system
+Fuel consumption tracking
+Congestion balancing
 📊 Output
-Solved Sudoku board
+Live traffic simulation
+Dynamic signal updates
+Improved traffic flow efficiency
+🔢 Task 3: Sudoku Solver using Logic
+📝 Description
+
+Solves a standard 9×9 Sudoku puzzle using two different AI reasoning approaches.
+
+⚙️ Approaches Used
+1️⃣ Propositional Logic
+CNF encoding of Sudoku constraints
+Solved using a SAT solver (pycosat)
+2️⃣ First-Order Logic
+Constraint modeling using Z3 Solver
+Ensures:
+Unique rows, columns, and subgrids
+Valid number domain (1–9)
+📊 Output
+Solved Sudoku grid
 Execution time comparison
-Visual comparison of both approaches
+Visualization of solutions
+💡 Insight
+
+This task highlights the difference between:
+
+Boolean constraint solving (SAT)
+Symbolic reasoning (FOL)
 📈 Task 4: House Price Prediction
-📌 Description
+📝 Description
 
-Machine Learning model to predict house prices using the California Housing Dataset.
+A machine learning project that predicts housing prices using the California Housing Dataset.
 
-⚙️ Features
-Data preprocessing & scaling
-Statistical analysis
-Visualization:
-Histogram
-Correlation heatmap
+⚙️ Workflow
+Data preprocessing & normalization
+Exploratory Data Analysis (EDA)
 Model training & evaluation
-🧠 Models Used
+🧠 Models Implemented
 Linear Regression
-K-Nearest Neighbors (k=3, 5, 7)
+K-Nearest Neighbors (k = 3, 5, 7)
 📊 Evaluation Metrics
 R² Score
 Mean Absolute Error (MAE)
 Mean Squared Error (MSE)
-📉 Visualization
-Actual vs Predicted values
-Model comparison plots
-🛠️ Technologies Used
-Python 🐍
-NumPy
-Pandas
-Matplotlib / Seaborn
+📉 Visualizations
+Feature correlations (heatmap)
+Data distribution plots
+Actual vs Predicted comparison
+🛠️ Tech Stack
+Language: Python
+Libraries:
+NumPy, Pandas
+Matplotlib, Seaborn
 Scikit-learn
 Z3 Solver
 PycoSAT
-▶️ How to Run
-Install dependencies:
+▶️ Getting Started
+1️⃣ Install Dependencies
 pip install numpy pandas matplotlib seaborn scikit-learn z3-solver pycosat
-Run each task separately:
+2️⃣ Run the Tasks
 python task1_maze.py
 python task2_traffic.py
 python task3_sudoku.py
 python task4_ml.py
-📌 Key Learnings
-Application of A* in pathfinding problems
-Real-world traffic optimization using AI
-Difference between Propositional & First-Order Logic
-Practical implementation of Machine Learning models
-Importance of visualization and performance analysis
+🎯 Key Learning Outcomes
+Practical implementation of A* Search in complex environments
+Design of adaptive, real-time intelligent systems
+Understanding Propositional vs First-Order Logic
+Application of Machine Learning for prediction tasks
+Importance of data visualization and performance evaluation
